@@ -1,8 +1,5 @@
 /* login.module.css */
 
-
-
-
 /* Body / container styles */
 .loginContainer {
   font-family: 'Poppins', sans-serif;
@@ -10,28 +7,11 @@
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  background: #000 !important;
+  background: radial-gradient(ellipse at bottom, #1B2735 0%, #12141d 100%);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-
-/* Paragraph styling */
-.loginParagraph {
-  color: #c4c3ca;
-  font-weight: 500;
-  font-size: 14px;
-}
-
-/* Links */
-.loginLink {
-  color: inherit;
-  text-decoration: none;
-}
-
-.loginLinkHover:hover {
-  text-decoration: underline;
 }
 
 /* Stars - keep original divs */
@@ -46,23 +26,103 @@
 }
 
 /* Optional: subtle starfield using radial-gradients */
+/* Replace your existing .stars, .stars2, .stars3 with this enhanced version */
+
 .stars {
   background-image:
-    radial-gradient(2px 2px at 20% 30%, rgba(255,255,255,0.8) 50%, transparent 51%),
+    radial-gradient(3.5px 3.5px at 20% 30%, rgba(255,255,255,0.9) 50%, transparent 51%),
     radial-gradient(1px 1px at 80% 20%, rgba(255,255,255,0.6) 50%, transparent 51%),
-    radial-gradient(1.5px 1.5px at 40% 70%, rgba(255,255,255,0.7) 50%, transparent 51%);
+    radial-gradient(2.5px 2.5px at 40% 70%, rgba(255,255,255,0.8) 50%, transparent 51%),
+    radial-gradient(0.8px 0.8px at 90% 40%, rgba(255,255,255,0.5) 50%, transparent 51%),
+    radial-gradient(3px 3px at 10% 60%, rgba(255,255,255,0.85) 50%, transparent 51%),
+    radial-gradient(1.5px 1.5px at 60% 10%, rgba(255,255,255,0.6) 50%, transparent 51%),
+    radial-gradient(1px 1px at 30% 90%, rgba(255,255,255,0.7) 50%, transparent 51%),
+    radial-gradient(2px 2px at 70% 50%, rgba(255,255,255,0.5) 50%, transparent 51%),
+    radial-gradient(0.7px 0.7px at 50% 80%, rgba(255,255,255,0.8) 50%, transparent 51%),
+    radial-gradient(2.8px 2.8px at 15% 15%, rgba(255,255,255,0.75) 50%, transparent 51%),
+    radial-gradient(1.2px 1.2px at 85% 75%, rgba(255,255,255,0.7) 50%, transparent 51%),
+    radial-gradient(3.2px 3.2px at 25% 45%, rgba(255,255,255,0.8) 50%, transparent 51%),
+    radial-gradient(0.9px 0.9px at 75% 25%, rgba(255,255,255,0.6) 50%, transparent 51%),
+    radial-gradient(1.8px 1.8px at 45% 85%, rgba(255,255,255,0.65) 50%, transparent 51%),
+    radial-gradient(1px 1px at 95% 65%, rgba(255,255,255,0.7) 50%, transparent 51%),
+    radial-gradient(2.2px 2.2px at 5% 35%, rgba(255,255,255,0.55) 50%, transparent 51%),
+    radial-gradient(0.6px 0.6px at 35% 5%, rgba(255,255,255,0.8) 50%, transparent 51%),
+    radial-gradient(2.7px 2.7px at 65% 95%, rgba(255,255,255,0.7) 50%, transparent 51%),
+    radial-gradient(1.3px 1.3px at 55% 35%, rgba(255,255,255,0.7) 50%, transparent 51%),
+    radial-gradient(3.3px 3.3px at 12% 78%, rgba(255,255,255,0.6) 50%, transparent 51%),
+    radial-gradient(0.5px 0.5px at 82% 12%, rgba(255,255,255,0.85) 50%, transparent 51%),
+    radial-gradient(1.6px 1.6px at 32% 58%, rgba(255,255,255,0.65) 50%, transparent 51%),
+    radial-gradient(2.9px 2.9px at 78% 88%, rgba(255,255,255,0.75) 50%, transparent 51%),
+    radial-gradient(0.8px 0.8px at 18% 38%, rgba(255,255,255,0.7) 50%, transparent 51%),
+    radial-gradient(2.4px 2.4px at 68% 28%, rgba(255,255,255,0.6) 50%, transparent 51%),
+    radial-gradient(1.1px 1.1px at 88% 68%, rgba(255,255,255,0.8) 50%, transparent 51%),
+    radial-gradient(3.1px 3.1px at 38% 8%, rgba(255,255,255,0.65) 50%, transparent 51%),
+    radial-gradient(0.7px 0.7px at 58% 98%, rgba(255,255,255,0.75) 50%, transparent 51%),
+    radial-gradient(1.9px 1.9px at 8% 48%, rgba(255,255,255,0.55) 50%, transparent 51%),
+    radial-gradient(2.6px 2.6px at 92% 18%, rgba(255,255,255,0.8) 50%, transparent 51%);
   animation: twinkle 6s infinite linear;
 }
+
 .stars2 {
   background-image:
-    radial-gradient(1px 1px at 30% 60%, rgba(255,255,255,0.6) 50%, transparent 51%),
-    radial-gradient(1.5px 1.5px at 60% 40%, rgba(255,255,255,0.7) 50%, transparent 51%);
+    radial-gradient(1.4px 1.4px at 30% 60%, rgba(255,255,255,0.6) 50%, transparent 51%),
+    radial-gradient(3.4px 3.4px at 60% 40%, rgba(255,255,255,0.8) 50%, transparent 51%),
+    radial-gradient(0.6px 0.6px at 80% 80%, rgba(255,255,255,0.5) 50%, transparent 51%),
+    radial-gradient(2.3px 2.3px at 18% 25%, rgba(255,255,255,0.85) 50%, transparent 51%),
+    radial-gradient(1.1px 1.1px at 88% 15%, rgba(255,255,255,0.6) 50%, transparent 51%),
+    radial-gradient(2.8px 2.8px at 42% 88%, rgba(255,255,255,0.75) 50%, transparent 51%),
+    radial-gradient(0.9px 0.9px at 22% 12%, rgba(255,255,255,0.5) 50%, transparent 51%),
+    radial-gradient(3.1px 3.1px at 78% 62%, rgba(255,255,255,0.8) 50%, transparent 51%),
+    radial-gradient(1.7px 1.7px at 52% 32%, rgba(255,255,255,0.65) 50%, transparent 51%),
+    radial-gradient(2.1px 2.1px at 8% 72%, rgba(255,255,255,0.7) 50%, transparent 51%),
+    radial-gradient(0.7px 0.7px at 68% 8%, rgba(255,255,255,0.55) 50%, transparent 51%),
+    radial-gradient(3.2px 3.2px at 38% 68%, rgba(255,255,255,0.8) 50%, transparent 51%),
+    radial-gradient(1.3px 1.3px at 92% 38%, rgba(255,255,255,0.6) 50%, transparent 51%),
+    radial-gradient(2.5px 2.5px at 28% 92%, rgba(255,255,255,0.75) 50%, transparent 51%),
+    radial-gradient(0.8px 0.8px at 58% 58%, rgba(255,255,255,0.5) 50%, transparent 51%),
+    radial-gradient(2.9px 2.9px at 2% 48%, rgba(255,255,255,0.85) 50%, transparent 51%),
+    radial-gradient(1.2px 1.2px at 72% 82%, rgba(255,255,255,0.6) 50%, transparent 51%),
+    radial-gradient(3.3px 3.3px at 48% 18%, rgba(255,255,255,0.7) 50%, transparent 51%),
+    radial-gradient(0.5px 0.5px at 14% 54%, rgba(255,255,255,0.8) 50%, transparent 51%),
+    radial-gradient(1.8px 1.8px at 84% 34%, rgba(255,255,255,0.65) 50%, transparent 51%),
+    radial-gradient(2.7px 2.7px at 34% 74%, rgba(255,255,255,0.7) 50%, transparent 51%),
+    radial-gradient(1px 1px at 64% 4%, rgba(255,255,255,0.6) 50%, transparent 51%),
+    radial-gradient(2.4px 2.4px at 94% 64%, rgba(255,255,255,0.75) 50%, transparent 51%),
+    radial-gradient(1.5px 1.5px at 24% 44%, rgba(255,255,255,0.55) 50%, transparent 51%),
+    radial-gradient(3px 3px at 74% 94%, rgba(255,255,255,0.8) 50%, transparent 51%);
   animation: twinkle 8s infinite linear;
 }
+
 .stars3 {
   background-image:
-    radial-gradient(1px 1px at 10% 80%, rgba(255,255,255,0.5) 50%, transparent 51%),
-    radial-gradient(1.5px 1.5px at 70% 90%, rgba(255,255,255,0.7) 50%, transparent 51%);
+    radial-gradient(0.8px 0.8px at 10% 80%, rgba(255,255,255,0.5) 50%, transparent 51%),
+    radial-gradient(2.6px 2.6px at 70% 90%, rgba(255,255,255,0.75) 50%, transparent 51%),
+    radial-gradient(1.2px 1.2px at 90% 10%, rgba(255,255,255,0.6) 50%, transparent 51%),
+    radial-gradient(3.4px 3.4px at 40% 30%, rgba(255,255,255,0.85) 50%, transparent 51%),
+    radial-gradient(0.6px 0.6px at 20% 50%, rgba(255,255,255,0.5) 50%, transparent 51%),
+    radial-gradient(2.2px 2.2px at 80% 70%, rgba(255,255,255,0.7) 50%, transparent 51%),
+    radial-gradient(1.6px 1.6px at 50% 20%, rgba(255,255,255,0.65) 50%, transparent 51%),
+    radial-gradient(3.1px 3.1px at 60% 80%, rgba(255,255,255,0.8) 50%, transparent 51%),
+    radial-gradient(0.9px 0.9px at 30% 40%, rgba(255,255,255,0.55) 50%, transparent 51%),
+    radial-gradient(2.8px 2.8px at 90% 60%, rgba(255,255,255,0.75) 50%, transparent 51%),
+    radial-gradient(1.3px 1.3px at 15% 95%, rgba(255,255,255,0.6) 50%, transparent 51%),
+    radial-gradient(3.2px 3.2px at 75% 5%, rgba(255,255,255,0.8) 50%, transparent 51%),
+    radial-gradient(0.7px 0.7px at 45% 75%, rgba(255,255,255,0.5) 50%, transparent 51%),
+    radial-gradient(2.4px 2.4px at 25% 25%, rgba(255,255,255,0.7) 50%, transparent 51%),
+    radial-gradient(1.8px 1.8px at 85% 85%, rgba(255,255,255,0.65) 50%, transparent 51%),
+    radial-gradient(3px 3px at 55% 55%, rgba(255,255,255,0.8) 50%, transparent 51%),
+    radial-gradient(0.5px 0.5px at 5% 15%, rgba(255,255,255,0.5) 50%, transparent 51%),
+    radial-gradient(2.7px 2.7px at 65% 45%, rgba(255,255,255,0.75) 50%, transparent 51%),
+    radial-gradient(1.1px 1.1px at 35% 65%, rgba(255,255,255,0.6) 50%, transparent 51%),
+    radial-gradient(3.5px 3.5px at 95% 35%, rgba(255,255,255,0.85) 50%, transparent 51%),
+    radial-gradient(1.4px 1.4px at 17% 87%, rgba(255,255,255,0.65) 50%, transparent 51%),
+    radial-gradient(2.9px 2.9px at 77% 17%, rgba(255,255,255,0.8) 50%, transparent 51%),
+    radial-gradient(0.8px 0.8px at 47% 77%, rgba(255,255,255,0.55) 50%, transparent 51%),
+    radial-gradient(2.3px 2.3px at 7% 47%, rgba(255,255,255,0.7) 50%, transparent 51%),
+    radial-gradient(1.7px 1.7px at 87% 7%, rgba(255,255,255,0.6) 50%, transparent 51%),
+    radial-gradient(3.3px 3.3px at 37% 97%, rgba(255,255,255,0.85) 50%, transparent 51%),
+    radial-gradient(1px 1px at 67% 27%, rgba(255,255,255,0.6) 50%, transparent 51%),
+    radial-gradient(2.5px 2.5px at 97% 67%, rgba(255,255,255,0.75) 50%, transparent 51%);
   animation: twinkle 10s infinite linear;
 }
 
@@ -72,11 +132,23 @@
   50% { opacity: 0.2; transform: scale(0.5); }
 }
 
-/* Layout and utilities (scoped replacements for global classes) */
+/* Counter-clockwise arrow animations */
+@keyframes rotateCounterClockwise {
+  0% { transform: translateX(0) rotate(315deg); }
+  100% { transform: translateX(44px) rotate(45deg); }
+}
+
+@keyframes rotateCounterClockwiseReverse {
+  0% { transform: translateX(44px) rotate(45deg); }
+  100% { transform: translateX(0) rotate(315deg); }
+}
+
+/* Layout styles */
 .section {
   position: relative;
   width: 100%;
 }
+
 .container {
   max-width: 1140px;
   margin-left: auto;
@@ -84,36 +156,58 @@
   padding-left: 16px;
   padding-right: 16px;
 }
-.row {
+
+/* Main layout components */
+.mainRow {
   display: flex;
   flex-wrap: wrap;
+  min-height: 100vh;
+  justify-content: center;
 }
-.fullHeight { min-height: 100vh; }
-.justifyCenter { justify-content: center; }
-.col12 { width: 100%; }
-.textCenter { text-align: center; }
-.alignSelfCenter { align-self: center; }
-.py5 { padding-top: 3rem; padding-bottom: 3rem; }
-.pb5 { padding-bottom: 3rem;}
-.pt5 { padding-top: 3rem; }
-.ptSm2 { padding-top: 0.5rem; }
-.mb0 { margin-bottom: 0; }
-.mb3 { margin-bottom: 1rem; }
-.mb4 { margin-bottom: 1.5rem; }
-.mt2 { margin-top: 0.5rem; }
-.mt4 { margin-top: 1.5rem; }
-.mxAuto { margin-left: auto; margin-right: auto; }
-.pb3 { padding-bottom: 1rem; }
 
-/* Card styles */
-.card3dWrap {
+.mainCol {
+  width: 100%;
+  text-align: center;
+  align-self: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.toggleSection {
+  position: relative;
+  width: 100%;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+  padding-top: 0.5rem;
+  text-align: center;
+}
+
+/* Toggle title (Log In / Sign Up) */
+.toggleTitle {
+  color: #62ff00;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  padding-bottom: 1rem;
+  padding-left: 20px;
+}
+.textTitle{
+  margin: 20px;
+}
+
+/* Card wrapper */
+.cardWrapper {
   position: relative;
   width: 440px;
   max-width: 100%;
   height: 400px;
   transform-style: preserve-3d;
   perspective: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
 }
+
 .card3dWrapper {
   width: 100%;
   height: 100%;
@@ -121,6 +215,7 @@
   transition: transform 0.8s ease;
   transform-style: preserve-3d;
 }
+
 .cardFront, .cardBack {
   position: absolute;
   inset: 0;
@@ -128,9 +223,12 @@
   background-color: #1c1c1e;
   border-radius: 8px;
   backface-visibility: hidden;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
-.cardBack { transform: rotateY(180deg); }
+
+.cardBack { 
+  transform: rotateY(180deg); 
+}
+
 .centerWrap {
   position: absolute;
   inset: 0;
@@ -140,47 +238,130 @@
   padding: 24px;
 }
 
-/* Form */
-.formGroup { position: relative; }
+/* Form section */
+.formSection {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+/* Card titles */
+.cardTitle {
+  color: #62ff00;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.signUpTitle {
+  color: #62ff00;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* Form groups */
+.formGroup { 
+  position: relative; 
+}
+
+.formGroupSpaced {
+  position: relative;
+  margin-top: 0.5rem;
+}
+
 .formStyle {
   width: 100%;
-  padding: 12px 40px 12px 14px;
+  padding: 12px 40px 12px 46px; /* Changed: increased left padding from 14px to 46px */
   background: rgba(255,255,255,0.06);
   border: 1px solid rgba(255,255,255,0.15);
   border-radius: 6px;
-  color: #fff;
+  color: #62ff00; /* Changed: text color to main color */
   outline: none;
 }
+
+.formStyle::placeholder {
+  color: rgba(255,255,255,0.7); /* Keep placeholder color as before */
+}
+
 .inputIcon {
   position: absolute;
-  right: 12px;
+  left: 12px; /* Changed: moved from right: 12px to left: 12px */
   top: 50%;
   transform: translateY(-50%);
   width: 18px;
   height: 18px;
   opacity: 0.7;
-  background: currentColor;
-  border-radius: 2px;
+  color: #62ff00; /* Changed: removed background and border-radius, kept color */
+  z-index: 1; /* Added to ensure icon stays above input */
 }
 
-.btn {
+/* Password toggle icon (eye icons) */
+.passwordToggleIcon {
+  position: absolute;
+  right: 12px; /* Positioned on the right side */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  opacity: 0.7;
+  color: #62ff00;
+  cursor: pointer;
+  z-index: 2;
+  transition: opacity 0.2s ease;
+}
+
+.passwordToggleIcon:hover {
+  opacity: 1;
+}
+
+/* Buttons */
+.loginBtn {
   display: inline-block;
   background: #62ff00;
   color: #000;
   padding: 10px 18px;
   border-radius: 6px;
   font-weight: bold;
+  margin-top: 1.5rem;
+  text-decoration: none;
 }
 
-.link { color: #c4c3ca; text-decoration: none; }
-.link:hover { text-decoration: underline; }
+.registerBtn {
+  display: inline-block;
+  background: #62ff00;
+  color: #000;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  text-decoration: none;
+}
 
-/* Custom slider/toggle switch - smaller and thinner */
+/* Links */
+.link { 
+  color: #62ff00; 
+  text-decoration: none; 
+}
+
+.link:hover { 
+  text-decoration: underline; 
+}
+
+.forgotPassword {
+  margin-bottom: 0;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+/* Custom slider/toggle switch */
 .checkbox {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  width: 50px;
+  width: 60px;
   height: 14px;
   background: #62ff00;
   border: none;
@@ -189,49 +370,53 @@
   cursor: pointer;
   transition: all 0.3s ease;
   outline: none;
+  margin-bottom: 20px;
 }
 
-/* Black thumb - half the height of thumb */
+/* Black thumb */
 .checkbox::before {
   content: '';
   position: absolute;
-  width: 28px;
-  height: 28px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   background: #000000;
-  top: -7px; /* Centers the thumb on the thinner track */
-  left: 0px;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  top: -11px;
+  left: -10px;
+  transition: all 0.5s ease;
 }
 
-/* Arrow using your PNG - rotated 45 degrees when unchecked */
+/* Arrow - centered in thumb with counter-clockwise animation */
 .checkbox::after {
   content: '';
   position: absolute;
-  width: 12px;
-  height: 12px;
-  top: 1px; /* Center in thumb */
-  left: 8px; /* Center in thumb */
-  background-image: url('/ArrowLeft.png');
+  width: 18px;
+  height: 18px;
+  top: 0px;
+  left: -1px;
+  background-image: url('/ArrowUpMainColor.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  transform: rotate(45deg); /* 45 degrees when unchecked */
-  transition: all 0.3s ease;
+  transform: rotate(315deg);
 }
 
-/* Move thumb to right when checked */
+/* Move thumb to full right position */
 .checkbox:checked::before {
-  transform: translateX(22px); /* Adjusted for smaller slider */
+  transform: translateX(44px);
 }
 
-/* Arrow rotates counter-clockwise to 135 degrees when checked */
+/* When checked - counter-clockwise animation */
 .checkbox:checked::after {
-  transform: translateX(22px) rotate(135deg); /* Counter-clockwise to 135 degrees */
+  animation: rotateCounterClockwise 0.5s ease forwards;
 }
 
-/* Hover effects */
-.checkbox:hover {
-  box-shadow: 0 0 8px rgba(98, 255, 0, 0.3);
+/* When unchecked - reverse counter-clockwise animation */
+.checkbox:not(:checked)::after {
+  animation: rotateCounterClockwiseReverse 0.5s ease forwards;
+}
+
+/* Card flip functionality - Show back when checkbox is checked */
+.checkbox:checked ~ .cardWrapper .card3dWrapper {
+  transform: rotateY(180deg);
 }

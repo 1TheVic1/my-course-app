@@ -1,0 +1,246 @@
+/* Blocks container */
+.blocks-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  margin: 0;
+  gap: 1rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+/* Base block styles */
+.block {
+  background: #555;
+  border-radius: 16px;
+  border: 1px solid #62ff00;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  pointer-events: auto;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* .block:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.16);
+} */
+
+/* Feature blocks (course cards) */
+.feature-block {
+  width: 240px;
+  height: 360px;
+  min-width: 250px;
+  min-height: 375px;
+  flex-shrink: 0;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Page blocks (decorative smaller blocks) */
+.page-block {
+  width: 70px;
+  height: 70px;
+  flex-shrink: 0;
+}
+
+/* Course content styling */
+.difficulty-indicator {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 0;
+  width: fit-content;
+}
+
+/* Header row container */
+.header-row {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Difficulty levels */
+.difficulty-indicator:has-text("Beginner"),
+.feature-block[data-block="1"] .difficulty-indicator {
+  background-color: #00ff00;
+  color: #000;
+}
+
+.difficulty-indicator:has-text("Intermediate"),
+.feature-block[data-block="2"] .difficulty-indicator {
+  background-color: #ff8c00;
+  color: #000;
+}
+
+.difficulty-indicator:has-text("Expert"),
+.feature-block[data-block="3"] .difficulty-indicator {
+  background-color: #ff0000;
+  color: #fff;
+}
+
+/* Alternative targeting for difficulty levels if :has-text doesn't work */
+.feature-block[data-block="1"] .difficulty-indicator {
+  background-color: #00ff00;
+  color: #000;
+}
+
+.feature-block[data-block="2"] .difficulty-indicator {
+  background-color: #ff8c00;
+  color: #000;
+}
+
+.feature-block[data-block="3"] .difficulty-indicator {
+  background-color: #ff0000;
+  color: #fff;
+}
+
+.course-type {
+  color: #62ff00;
+  border: 1px solid #62ff00;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0;
+  width: fit-content;
+  background: transparent;
+}
+
+.course-title {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+  line-height: 1.3;
+}
+
+.course-description {
+  color: #fff;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  margin: 0 0 1.5rem 0;
+  opacity: 0.9;
+}
+
+.price-container {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.current-price {
+  color: #62ff00;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.old-price {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: line-through;
+  margin-bottom: 0.25rem;
+  opacity: 0.7;
+}
+
+/* Desktop responsive scaling */
+@media (min-width: 936px) {
+  .page-block {
+    display: none;
+  }
+  
+  .feature-block {
+    width: calc(240px + (100vw - 936px) * 0.3);
+    max-width: 480px;
+    height: 360px;
+    padding: 2rem;
+  }
+  
+  .course-title {
+    font-size: 1.75rem;
+  }
+  
+  .current-price {
+    font-size: 1.75rem;
+  }
+}
+
+/* Tablet styles */
+@media (max-width: 935px) and (min-width: 451px) {
+  .blocks-container {
+    position: relative;
+    bottom: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .feature-block {
+    width: 200px;
+    height: 300px;
+    min-width: 200px;
+    min-height: 300px;
+    padding: 1.25rem;
+  }
+  
+  .course-title {
+    font-size: 1.25rem;
+  }
+  
+  .current-price {
+    font-size: 1.25rem;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 450px) {
+  .page-block {
+    display: none;
+  }
+  
+  .blocks-container {
+    position: static;
+    top: auto;
+    height: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .feature-block[data-block="1"],
+  .feature-block[data-block="2"],
+  .feature-block[data-block="3"] {
+    width: 250px;
+    height: 600px;
+    min-height: 600px;
+    min-width: 250px;
+    scroll-snap-align: center;
+    padding: 1.5rem;
+  }
+  
+  .course-title {
+    font-size: 1.4rem;
+  }
+  
+  .current-price {
+    font-size: 1.4rem;
+  }
+}

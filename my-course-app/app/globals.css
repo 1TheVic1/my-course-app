@@ -16,16 +16,40 @@
     background-position: center;
   }
 }
+
 :root {
-  --background: #1c1c1e;
-  --foreground: #171717;
+  /* Default to dark mode */
+  --bg-primary: rgb(53, 53, 53);
+  --bg-secondary: rgb(35, 35, 35);
+  --text-primary: #ffffff;
+  --text-secondary: #e0e0e0;
+  --border-color: #404040;
+  --shadow: rgba(0, 0, 0, 0.3);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-  --background: #1c1c1e;
-    --foreground: #ededed;
-  }
+/* Dark mode theme */
+body:has([data-exclude-theme]) {
+  color: #ffffff !important;
+  background: radial-gradient(ellipse at bottom, #222020 0%, #000 100%) !important;
+}
+
+.dark {
+  --bg-primary: rgb(53, 53, 53);
+  --bg-secondary: rgb(35, 35, 35);
+  --text-primary: #ffffff;
+  --text-secondary: #e0e0e0;
+  --border-color: #404040;
+  --shadow: rgba(0, 0, 0, 0.3);
+}
+
+/* Light mode theme */
+.light {
+  --bg-primary: rgb(210, 210, 210);
+  --bg-secondary: rgb(240, 240, 240);
+  --text-primary: #000000;
+  --text-secondary: #333333;
+  --border-color: #cccccc;
+  --shadow: rgba(0, 0, 0, 0.1);
 }
 
 html,
@@ -37,24 +61,24 @@ body {
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  background-image: url('/Desktop%20%2B%20Pattern.png');
+  color: var(--text-primary);
+  background: var(--bg-primary);
+  background-image: url('/SmallDesktopPattern.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 [data-page="login"] {
   min-height: 100vh;
-  background: #ededed; /* Black background for login */
+  background: radial-gradient(ellipse at bottom, #222020 0%, #000 100%) !important;
   margin: 0;
   padding: 0;
+  color: #ffffff !important;
 }
 
 * {

@@ -12,7 +12,7 @@ export default function Nav() {
     <nav className={styles.nav}>
       <div className={styles["nav-left"]}>
         <div className={styles["placeholder-square"]}></div>
-        <span className={styles["nav-title"]}>Victor Coetzee</span>
+        <span className={styles["nav-title"]}>Veloriom Academy</span>
       </div>
       <button
         className={styles.hamburger}

@@ -1,1 +1,72 @@
-/* Add settings page specific styles here */
+.settingsContainer {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--bg-secondary);
+    border-radius: 16px;
+    box-shadow: 0 4px 24px var(--shadow);
+    margin-top: 2rem;
+  }
+  
+  .settingItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .settingLabel {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+  }
+  
+  .toggleContainer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .themeLabel {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+  }
+  
+  .toggle {
+    position: relative;
+    width: 60px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    outline: none;
+  }
+  
+  .toggleLight {
+    background-color: #ddd;
+  }
+  
+  .toggleDark {
+    background-color: #62ff00;
+  }
+  
+  .toggleSlider {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: white;
+    transition: transform 0.3s ease;
+  }
+  
+  .toggleDark .toggleSlider {
+    transform: translateX(30px);
+  }
+  
+  .toggleLight .toggleSlider {
+    transform: translateX(0);
+  }

@@ -3,11 +3,12 @@ import { useEffect, useRef } from "react";
 
 import Nav from "./Nav";
 import Link from "next/link";
-import styles from "./blocks.module.css";
+import styles from "./featureblocks.module.css";
 import pageStyles from './page.module.css';
 
 export default function Home() {
   const containerRef = useRef(null);
+  
   useEffect(() => {
     function centerBlock1() {
       if (window.innerWidth <= 450 && containerRef.current) {
@@ -25,50 +26,59 @@ export default function Home() {
     window.addEventListener("resize", centerBlock1);
     return () => window.removeEventListener("resize", centerBlock1);
   }, []);
+
   return (
     <>
       <Nav />
-      <main style={{ width: '100vw', display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: 32 }}>
-  <h1 style={{ fontSize: 72, fontWeight: 700, marginBottom: 12, color: '#fff', textAlign: 'center', marginTop: '5vh' }}>Learn New Skills Online</h1>
-  <p style={{ fontSize: 40, color: '#ccc', marginBottom: 24, textAlign: 'center', marginTop: '5vh' }}>
+      <main className={pageStyles.homeMain}>
+        <h1 className={pageStyles.heroTitle}>Learn New Skills Online</h1>
+        <p className={pageStyles.heroSubtitle}>
           Explore a variety of courses and expand your knowledge
         </p>
-        <Link href="/courses" style={{
-          background: '#62ff00',
-          color: '#111',
-          fontWeight: 600,
-          fontSize: 18,
-          border: 'none',
-          borderRadius: 8,
-          padding: '12px 32px',
-          cursor: 'pointer',
-          position: 'absolute',
-          left: '7.5%',
-          bottom: '50%',
-          zIndex: 2,
-          textDecoration: 'none',
-          display: 'inline-block'
-        }}>
-          Browse Courses
+        <Link href="/courses" className={pageStyles.browseCourses}>
+          Browse All Courses
         </Link>
-        <h2 style={{
-          fontSize: 28,
-          fontWeight: 600,
-          color: '#fff',
-          textAlign: 'left',
-          position: 'absolute',
-          left: '7.5%',
-          bottom: '40%',
-          margin: 0,
-          zIndex: 2
-        }}>Featured Courses</h2>
+        <h2 className={pageStyles.featuredTitle}>Featured Courses</h2>
         <div className={styles["blocks-container"]} ref={containerRef}>
-          <div className={styles["block"] + ' ' + styles["page-block"]}></div>
-          <div className={styles["block"] + ' ' + styles["feature-block"]} data-block="1"></div>
-          <div className={styles["block"] + ' ' + styles["feature-block"]} data-block="2"></div>
-          <div className={styles["block"] + ' ' + styles["feature-block"]} data-block="3"></div>
-          <div className={styles["block"] + ' ' + styles["page-block"]}></div>
-        </div>
+  <div className={styles["block"] + ' ' + styles["page-block"]}></div>
+  
+  <div className={styles["block"] + ' ' + styles["feature-block"]} data-block="1">
+    <div className={styles["header-row"]}>
+      <div className={styles["difficulty-indicator"]}>Beginner</div>
+      <div className={styles["course-type"]}>Web Development</div>
+    </div>
+    <h3 className={styles["course-title"]}>Introduction to HTML</h3>
+    <p className={styles["course-description"]}>This is a course to introduce you to the fundamentals of HTML</p>
+    <div className={styles["price-container"]}>
+      <span className={styles["current-price"]}>R 129.99</span>
+    </div>
+  </div>
+  
+  <div className={styles["block"] + ' ' + styles["feature-block"]} data-block="2">
+    <div className={styles["header-row"]}>
+      <div className={styles["difficulty-indicator"]}>Intermediate</div>
+      <div className={styles["course-type"]}>Web Development</div>
+    </div>
+    <h3 className={styles["course-title"]}>Advanced CSS Techniques</h3>
+    <p className={styles["course-description"]}>Master advanced CSS concepts including flexbox, grid, and animations</p>
+    <div className={styles["price-container"]}>
+      <span className={styles["old-price"]}>R 150.00</span>
+      <span className={styles["current-price"]}>R 129.99</span>
+    </div>
+  </div>
+  
+  <div className={styles["block"] + ' ' + styles["feature-block"]} data-block="3">
+    <div className={styles["header-row"]}>
+      <div className={styles["difficulty-indicator"]}>Expert</div>
+      <div className={styles["course-type"]}>Backend Development</div>
+    </div>
+    <h3 className={styles["course-title"]}>Node.js Architecture</h3>
+    <p className={styles["course-description"]}>Build scalable backend applications with advanced Node.js patterns</p>
+    <div className={styles["price-container"]}>
+      <span className={styles["current-price"]}>R 129.99</span>
+    </div>
+  </div>
+</div>
       </main>
     </>
   );
